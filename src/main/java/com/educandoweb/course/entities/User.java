@@ -19,6 +19,9 @@ private String phone;
 private String password;
 
 
+public User() {
+}
+
 public User(Long id, String nome, String email, String phone, String password) {
     this.id = id;
     this.nome = nome;
