@@ -1,5 +1,6 @@
 package com.educandoweb.course.entities;
 
+import java.io.Serializable;
 import java.time.Instant;
 
 import com.educandoweb.course.entities.enums.OrderStatus;
@@ -15,7 +16,7 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "tb_orders")
-public class Order{
+public class Order implements Serializable{
 @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
 private Long id;
 
